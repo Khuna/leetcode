@@ -5,6 +5,7 @@ public class TrappingRainWater {
         System.out.println(trap(height));
 
     }
+
     public static int trap(int[] height) {
         if (height.length == 0 || height.length == 1 || height.length == 2) {
             return 0;
@@ -35,7 +36,6 @@ public class TrappingRainWater {
                     maxEnd = height[end];
                 }
             }
-
         }
         return result;
     }
